@@ -1,0 +1,14 @@
+<h1>GET Request Received</h1>
+
+<table style="width:25%" border="solid">
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    {{#each listOfParamsURL}}
+    <tr>
+        <td style="text-align:center;">{{this.name}}</td>
+        <td style="text-align:center;">{{this.value}}</td>
+    </tr>
+    {{/each}}
+</table>

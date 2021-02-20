@@ -1,0 +1,29 @@
+<h1>POST Request Received</h1>
+
+<table style="width:25%" border="solid">
+    <caption>URL Data</caption>
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    {{#each listOfParamsURL}}
+    <tr>
+        <td style="text-align:center;">{{this.name}}</td>
+        <td style="text-align:center;">{{this.value}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<table style="width:25%" border="solid">
+    <caption>Json Data / Encoded Data</caption>
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    {{#each listOfParamsJSON}}
+    <tr>
+        <td style="text-align:center;">{{this.name}}</td>
+        <td style="text-align:center;">{{this.value}}</td>
+    </tr>
+    {{/each}}
+</table>
